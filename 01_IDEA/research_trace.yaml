@@ -1,0 +1,28 @@
+schema_version: research_template_lite_trace_v1
+tree:
+  - id: N01
+    type: question
+    title: "由成对风光荷轨迹计算连续两个时段的低电压概率"
+    provenance: user
+    status: open
+    description: "研究逐时交流潮流、联合电压模型及序贯蒙特卡洛之间的精度和计算量。"
+    affects:
+      claims: [C1, C2, C3]
+      files: [01_IDEA/story.md, 01_IDEA/derivation.md]
+    children:
+      - id: N02
+        type: experiment
+        title: "两节点两时段源荷与电压配对核对"
+        provenance: ai-suggested
+        status: open
+        verifies: [C1]
+        evidence: [E01]
+        entry: TMMTimeseries_case2bus.m
+        run_manifest: result/case2bus/run_manifest.json
+      - id: N03
+        type: open_question
+        title: "确定具有明确评价阈值的独立概率验证场景"
+        provenance: ai-suggested
+        status: open
+        verifies: [C2, C3]
+        evidence: [E02, E03]

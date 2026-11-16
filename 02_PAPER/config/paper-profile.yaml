@@ -1,0 +1,45 @@
+contractVersion: "2026.07.12"
+profileVersion: "1.1"
+lastConfirmedAt: ""
+
+targetVenue: "待定"
+workingLanguage: "zh-CN"
+researchPurpose: "从保留时序依赖的风光荷轨迹估计节点连续低电压概率，并与序贯交流潮流蒙特卡洛比较同精度下的计算成本。"
+researchPurposeStatus: draft
+researchPurposeBaselineVersion: ""
+researchPurposeChangeReason: ""
+minimumResearchObject: "固定平衡节点的两节点系统，含一个 PQ 节点及两个相邻时段"
+paperSpine: "Estimate consecutive low-voltage probability from paired source and load trajectories and compare computation at matched accuracy."
+
+primaryInnovationAxis: technical-object
+secondaryInnovationAxes: []
+noveltyMode: one-to-hundred
+technicalObjectType: model-formulation
+narrativeArc: method-first
+lifecycleStage: zero-to-one-explore
+manuscriptUse: conditional
+
+caseContract: new-method
+requiredEvidenceRoles: [] # 按论文的实际算例故事填写，不自动要求四类角色齐全
+
+evidenceBoundary: "教学案例使用合成输入；真实输入的尾部精度及同精度计算量尚未验证。"
+canonicalTerms:
+  projectSpecific: {}
+keyQuantities: [节点电压幅值, 两时段连续低电压估计概率]
+
+venuePolicy:
+  skillVersion: ""
+  checkedAt: ""
+
+lastConfirmedBrief:
+  engineeringPainPoint: ""
+  mainInnovation: ""
+  theoreticalValue: ""
+  engineeringValue: ""
+  framingsToDrop: []
+
+lastConsistencyVerdict:
+  checkedAt: ""
+  skillVersion: ""
+  verdict: not-run
+  report: 02_PAPER/submission_consistency.md

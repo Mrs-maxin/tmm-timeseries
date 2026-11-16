@@ -1,0 +1,5 @@
+trajectoryId,period,windMW,solarMW,loadMW,windMVAr,solarMVAr,loadMVAr
+A,1,0.20,0.10,0.80,0,0,0.240
+A,2,0.15,0.05,0.90,0,0,0.270
+B,1,0.30,0.20,0.75,0,0,0.225
+B,2,0.35,0.15,0.78,0,0,0.234
