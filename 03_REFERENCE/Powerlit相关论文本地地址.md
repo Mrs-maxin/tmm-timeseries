@@ -1,33 +1,35 @@
 # TMMTimeseries 相关文献与 PowerLit 本地地址
 
-2026-11-15 收录 45 篇英文期刊论文，其中 43 篇讨论电力系统或为联合二次型计算提供数学依据，另 2 篇为 Student-t 统计方法来源。题名、全体作者、出版信息和 DOI 经 Crossref 核对。各条用途为目前的阅读与比较计划。全文核查状态按已取得材料记录。
+截至 2026-11-16，收录 47 篇英文期刊论文，其中 45 篇讨论电力系统或为联合二次型计算提供数学依据，另 2 篇为 Student-t 统计方法来源。题名、全体作者、出版信息和 DOI 经 Crossref 核对。表中记录各篇论文的阅读用途和全文核查状态。
 
 在线检索使用 probabilistic power flow、analytic time series load flow、inter-temporal correlations、voltage violations 和 space-time trajectories，中文检索使用时序概率潮流、连续低电压和风光荷时序相关性。与单时段 AC 概率潮流、尾部计算及稀有事件有关的初始条目从相邻 AQPPF_TMM 项目目录复核，时序条目另行核对。
 
 在本机 PowerLit 分刊索引中找到 30 条。查询时配置的全文 JSON 目录不存在，PDF 根目录未定位。表中记录已核查的索引位置、原文来源和全文获取状态。
 
-已核对 Golestaneh 等的作者稿，重点为光伏轨迹的边缘分布和依赖对照。Samet 与 Khorshidsavar、Rouhani 等及 Long 等的立项判断依据摘要或出版方公开预览。Liu 等提供开放全文，可比较输入时序建模及潮流统计矩。正式数值对标的论文在明确比较设定后登记。
+已核对 Samet 与 Khorshidsavar、Golestaneh 等、Algikar 等、Cui 等及 González-Ordiano 等的方法与算例。Rouhani 等及 Long 等的阅读用途依据摘要、出版方预览或 PowerLit 原文片段确定。Liu 等提供开放全文，可比较输入时序建模及潮流统计矩。正式数值对标的论文在明确比较设定后登记。
 
 ## 时序潮流和运行风险
 
 | 编号与引用键 | 论文与出版信息 | 本项目使用位置及用途 | 已定位的索引或 PDF |
 | --- | --- | --- | --- |
-| TS01 · `RefTS01` | Haidar Samet, Morteza Khorshidsavar. **Analytic time series load flow**. Renewable and Sustainable Energy Reviews, 2018, 82, 3886-3899. [DOI](https://doi.org/10.1016/j.rser.2017.10.084) | 研究目的与方案。对照采用 ARMA 表示源荷及电压时间联系的解析潮流路线。 | 未定位本地全文 |
+| TS01 · `RefTS01` | Haidar Samet, Morteza Khorshidsavar. **Analytic time series load flow**. Renewable and Sustainable Energy Reviews, 2018, 82(3), 3886-3899. [DOI](https://doi.org/10.1016/j.rser.2017.10.084) | 研究目的与方案。第 3.2 节通过近似潮流方程将源荷 ARMA 模型转换为电压时序模型。第 4.2 节用电压闪变指标评估 69 节点馈线重构方案。 | [出版商页面](https://www.sciencedirect.com/science/article/pii/S1364032117314673)、[在线全文](https://www.academia.edu/124860733/Analytic_time_series_load_flow) |
 | TS02 · `RefTS02` | Mohammadhadi Rouhani, Mohammad Mohammadi, Marco Aiello. **Soft clustering based probabilistic power flow with correlated inter temporal events**. Electric Power Systems Research, 2022, 204, 107677. [DOI](https://doi.org/10.1016/j.epsr.2021.107677) | 研究目的与方案。对照通过记忆系数处理跨时段源荷相关性及估计潮流输出密度的方法。 | 未定位本地全文 |
 | TS03 · `RefTS03` | Muyang Liu, Yinjun Xiong, Quan Li, Mohammed Ahsan Adib Murad, Weilin Zhong. **Higher-Order Markov Chain-Based Probabilistic Power Flow Calculation Method Considering Spatio-Temporal Correlations**. Energies, 2025, 18(5), 1058. [DOI](https://doi.org/10.3390/en18051058) | 研究目的与方案。对照高阶马尔可夫链输入建模与潮流矩估计，区分统计矩和连续越限的验证对象。 | 未定位本地全文 |
 | TS05 · `RefTS05` | Chao Long, Mohamed E. A. Farrag, Chengke Zhou, Donald M. Hepburn. **Statistical Quantification of Voltage Violations in Distribution Networks Penetrated by Small Wind Turbines and Battery Electric Vehicles**. IEEE Transactions on Power Systems, 2013, 28(3), 2403-2411. [DOI](https://doi.org/10.1109/tpwrs.2013.2252472) | 研究目的与方案。核对配电网风速、用电负荷和电动汽车充电的日内变化与电压越限评估。 | `ieee_tpwrs.sqlite` ID 1119 |
+| TS12 · `RefTS12` | Pooja Algikar, Yijun Xu, Somayeh Yarahmadi, Lamine Mili. **A Robust Data-Driven Process Modeling Applied to Time-Series Stochastic Power Flow**. IEEE Transactions on Power Systems, 2024, 39(1), 693-705. [DOI](https://doi.org/10.1109/TPWRS.2023.3238385) | 方法综述。作者将配对的功率注入和电压相量用于训练稳健高斯过程，得到节点电压预测及其不确定性。第 IV 节的 33 节点和 240 节点算例检验训练数据含异常值时的预测精度。项目借鉴注入与电压的配对方式，以及训练和独立预测的比较设计。 | `ieee_tpwrs.sqlite` ID 6060、[作者预印本](https://arxiv.org/abs/2301.02651) |
 
 ## 源荷时序输入和预测
 
 | 编号与引用键 | 论文与出版信息 | 本项目使用位置及用途 | 已定位的索引或 PDF |
 | --- | --- | --- | --- |
-| TS04 · `RefTS04` | Faranak Golestaneh, Hoay Beng Gooi, Pierre Pinson. **Generation and evaluation of space–time trajectories of photovoltaic power**. Applied Energy, 2016, 176, 80-91. [DOI](https://doi.org/10.1016/j.apenergy.2016.05.025) | 研究目的与方案。核对固定逐时预测边缘分布时，独立抽样和保留时空依赖的光伏轨迹。 | 本地阅读文件 `papers/2016-Golestaneh-PVTrajectories.pdf`，[DTU 作者稿](https://backend.orbit.dtu.dk/ws/files/123681987/Golestaneh2016_1_.pdf)；2026-11-15 |
+| TS04 · `RefTS04` | Faranak Golestaneh, Hoay Beng Gooi, Pierre Pinson. **Generation and evaluation of space–time trajectories of photovoltaic power**. Applied Energy, 2016, 176, 80-91. [DOI](https://doi.org/10.1016/j.apenergy.2016.05.025) | 算例方案。第 6 节比较具有相同逐时预测边缘分布的光伏轨迹，检验独立抽样与保留时空依赖时对持续事件和出力变化事件的概率预测。项目借鉴边缘分布相同的对照设计。 | 本地阅读文件 `papers/2016-Golestaneh-PVTrajectories.pdf`，[DTU 作者稿](https://backend.orbit.dtu.dk/ws/files/123681987/Golestaneh2016_1_.pdf)；2026-11-15 |
 | TS06 · `RefTS06` | Duehee Lee, Ross Baldick. **Load and Wind Power Scenario Generation Through the Generalized Dynamic Factor Model**. IEEE Transactions on Power Systems, 2017, 32(1), 400-410. [DOI](https://doi.org/10.1109/tpwrs.2016.2562718) | 研究目的与方案。核对风电与负荷联合轨迹建模及时间依赖的比较条件。 | `ieee_tpwrs.sqlite` ID 2603 |
 | TS07 · `RefTS07` | Xiangqi Zhu, Barry Mather. **Data-Driven Distribution System Load Modeling for Quasi-Static Time-Series Simulation**. IEEE Transactions on Smart Grid, 2020, 11(2), 1556-1565. [DOI](https://doi.org/10.1109/tsg.2019.2940084) | 研究目的与方案。核对配电网求解所需分辨率下的负荷时间序列建模。 | `ieee_tsg.sqlite` ID 3181 |
 | TS09 · `RefTS09` | Pierre Pinson, Henrik Madsen, Henrik Aa. Nielsen, George Papaefthymiou, Bernd Klöckl. **From probabilistic forecasts to statistical scenarios of short‐term wind power production**. Wind Energy, 2009, 12(1), 51-62. [DOI](https://doi.org/10.1002/we.284) | 研究目的与方案。核对逐时风电预测分布如何转成保留跨时段依赖的轨迹。 | 未定位本地全文 |
+| TS13 · `RefTS13` | Mingjian Cui, Deping Ke, Yuanzhang Sun, Di Gan, Jie Zhang, Bri-Mathias Hodge. **Wind Power Ramp Event Forecasting Using a Stochastic Scenario Generation Method**. IEEE Transactions on Sustainable Energy, 2015, 6(2), 422-433. [DOI](https://doi.org/10.1109/TSTE.2014.2386870) | 事件定义与算例方案。作者用风电实测数据构造预测轨迹，统计爬坡起始时刻、持续时间和功率变化幅度，第 V 节图 10 给出爬坡特征的联合分布。项目借鉴从完整轨迹定义跨时段事件和计算概率的步骤。 | [作者主页所载期刊全文](https://personal.utdallas.edu/~jiezhang/Journals/JIE_2015_IEEE_TSTE_wind_ramping.pdf) |
 | C-08 · `RefC08` | Can Wan, Wenkang Cui, Yonghua Song. **Machine Learning-Based Probabilistic Forecasting of Wind Power Generation: A Combined Bootstrap and Cumulant Method**. IEEE Transactions on Power Systems, 2024, 39(1), 1370-1383. [DOI](https://doi.org/10.1109/tpwrs.2023.3264821) | 研究目的与方案。探讨半不变量与级数展开在非高斯风电功率分布重构中的高阶矩敏感性。 | `ieee_tpwrs.sqlite` ID 6173 |
 | D-03 · `RefD03` | Fan Lin, Yao Zhang, Ke Wang, Jianxue Wang, Morun Zhu. **Parametric Probabilistic Forecasting of Solar Power With Fat-Tailed Distributions and Deep Neural Networks**. IEEE Transactions on Sustainable Energy, 2022, 13(4), 2133-2147. [DOI](https://doi.org/10.1109/tste.2022.3186517) | 研究目的与方案。实证表明云团遮蔽等气象过程下光伏出力呈现显著厚尾分布特征，正态分布低估尾部波动概率。 | 未定位本地全文 |
-| D-04 · `RefD04` | Jorge Ángel González-Ordiano, Tillmann Mühlpfordt, Eric Braun, Jianlei Liu, Hüseyin Çakmak, Uwe Kühnapfel, Clemens Düpmeier, Simon Waczowicz, Timm Faulwasser, Ralf Mikut, Veit Hagenmeyer, Riccardo Remo Appino. **Probabilistic forecasts of the distribution grid state using data-driven forecasts and probabilistic power flow**. Applied Energy, 2021, 302, 117498. [DOI](https://doi.org/10.1016/j.apenergy.2021.117498) | 研究目的与方案。阐明配电网概率状态估计与越限分析须保留各节点状态变量间的联合相关性。 | 未定位本地全文 |
+| D-04 · `RefD04` | Jorge Ángel González-Ordiano, Tillmann Mühlpfordt, Eric Braun, Jianlei Liu, Hüseyin Çakmak, Uwe Kühnapfel, Clemens Düpmeier, Simon Waczowicz, Timm Faulwasser, Ralf Mikut, Veit Hagenmeyer, Riccardo Remo Appino. **Probabilistic forecasts of the distribution grid state using data-driven forecasts and probabilistic power flow**. Applied Energy, 2021, 302, 117498. [DOI](https://doi.org/10.1016/j.apenergy.2021.117498) | 研究目的与算例方案。作者结合分位数回归和概率潮流，对真实 38 节点配电网预报未来第 1、2、3 小时的节点电压幅值和支路电流分布，并用分位数损失核对预报精度。项目借鉴从源荷预测到电气量分布的计算步骤。 | [汉堡工业大学文库期刊全文](https://tore.tuhh.de/dspace-cris-server/api/core/bitstreams/7d66f804-cb60-45cf-a102-1d186fa217f2/content) |
 
 ## 交流潮流近似与联合概率传播
 
